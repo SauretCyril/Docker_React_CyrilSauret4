@@ -1,0 +1,52 @@
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 2rem 1rem;
+    z-index: 10;
+    width: 250px;
+    transition: transform 0.3s ease;
+    min-width: 100px;
+  }
+
+.section {
+    background-color: var(--bg-color-dark);
+}
+.section-title {
+    text-align: center;
+    color: white; 
+    font-size: 1em;
+   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-color);
+    /* margin: 20px auto 0; */
+}
+  
+.card-grid  {
+   
+    /* grid-template-columns: repeat(auto-fit, minmax(15px, 1fr)); */
+    display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */ /* Deux colonnes de largeur égale */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Minimum 1 colonne, maximum 2 colonnes */
+    gap: 16px; /* Espace entre les éléments, ajustez selon vos besoins */
+   
+}
+
+.sidebar-left {
+    left: 0;
+  }
+  
+  .sidebar-right {
+    right: 0;
+  }

@@ -1,5 +1,6 @@
 import React from 'react';
-import './styles/SlidePhoto.css';
+import './styles/slidePhoto.css';
+import './styles/article.css';
 
 
 const SlidePhoto = () => {
